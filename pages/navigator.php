@@ -1,7 +1,6 @@
 <!-- Header -->    
 <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
     <div class="container">
-    
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -9,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand wow fadeInDownBig" href="../index.php"><img class="office-logo" src="../assets/img/slider/logo.jpg" alt="Office"></a>      
+            <a class="navbar-brand" href="../index.php"><img class="office-logo" src="../assets/img/slider/logo.jpg" alt="Office"></a>      
         </div>
     
         <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
@@ -20,20 +19,23 @@
                 <? if (strpos($current_file_name, 'about') !== false) {echo '<li class="active">';}else{echo '<li>';}?>
                     <a href="../pages/about.php">About us</a>
                 </li>
+                <? if (strpos($current_file_name, 'report') !== false) {echo '<li class="active">';}else{echo '<li>';}?>
+                    <a href="../pages/report.php">Report</a>
+                </li>
                 <? if (strpos($current_file_name, 'projects') !== false) {echo '<li class="active">';}else{echo '<li>';}?>
-                    <a href="index.html">Projects</a>
+                    <a href="../pages/projects.php">Projects</a>
                 </li>
                 <? if (strpos($current_file_name, 'impacts') !== false) {echo '<li class="active">';}else{echo '<li>';}?>
-                    <a href="blog.html">Impacts</a>
+                    <a href="../pages/impacts.php">Impacts</a>
                 </li>
                 <? if (strpos($current_file_name, 'blog') !== false) {echo '<li class="active">';}else{echo '<li>';}?>
-                    <a href="blog.html">Blog</a>
+                    <a href="../pages/blog.php">Blog</a>
                 </li>
                 <? if (strpos($current_file_name, 'contact') !== false) {echo '<li class="active">';}else{echo '<li>';}?>
                     <a href="../pages/contact.php"><span>Contact</span></a>
                 </li>
                 <? if (strpos($current_file_name, 'partners') !== false) {echo '<li class="active">';}else{echo '<li>';}?>
-                    <a href="../pages/team.php">Partners</a>
+                    <a href="../pages/partners.php">Partners</a>
                 </li>
                 <? if (strpos($current_file_name, 'donation') !== false) {echo '<li class="active">';}else{echo '<li>';}?>
                 <li>

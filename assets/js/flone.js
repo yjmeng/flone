@@ -16,6 +16,20 @@ function loadDetails(btnDiv, contentDiv, detailPage,btnName){
   });
   $("#"+btnName).addClass('active');
 }
+// ==========================
+// LOAD TAB IN A TABLIST
+// ==========================
+function loadTabs(btnDiv1, btnName, tabBtnId, btnDiv2){
+  $("#"+btnDiv1).find('a').each(function() {
+    $(this).removeClass('active');
+  });
+  $("#"+btnName).addClass('active');
+  $("#"+btnDiv2).find('a').each(function() {
+    $(this).removeClass('active');
+  });
+  $("#"+tabBtnId).click();
+  $("#"+tabBtnId).addClass('active');
+}
 +function ($) {
   // $(window).on('load', function () {
   //   $('[data-spy="affix"]').each(function () {

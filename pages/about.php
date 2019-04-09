@@ -4,8 +4,6 @@
 <? $current_file_name = basename(__FILE__); ?>
 <body>
     <?include 'navigator.php';?>
-
-    <div id="banners"></div>
     <div class="container">   
         <div class="page-row">
             <div id="aboutBtns" class="services-group side-left col-sm-4 col-md-4">

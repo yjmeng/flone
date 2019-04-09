@@ -3,7 +3,6 @@
 <?include 'head.html';?>
 <? $current_file_name = basename(__FILE__); ?>
 <body>
-    <!-- Header -->
     <?include 'navigator.php';?>
 
     <div class="row container-kamn">  

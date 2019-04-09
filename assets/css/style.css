@@ -1,35 +1,21 @@
-
 /*
-Theme Name:Office
-Theme URI:http://ThemeWagon.com/
-Author:ThemeWagon
-Author URI:http://ThemeWagon.com/
-Description:Creative is a single page html template based on bootstrap 3
-Version:1.0.0
-License:GNU General Public License v2 or later
-License URI:http://www.gnu.org/licenses/gpl-2.0.html
-*/
-
- /*
 * ==========================================================================
 * Global
 * ==========================================================================
 */
-.btn-primary{
+/* .btn-primary{
   margin-left: 20px;
 }
 .blog-title{
   color: #385A30;
   font-family: "Lato";
   font-variant: small-caps;
-}
-
- .main-content{
+} */
+.main-content{
     margin-top: 20px;
     padding-bottom: 50px;
     text-align: left;
 }
-
 .section-global-wrapper {
   position: relative;
 }
@@ -51,8 +37,6 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
   margin-right: auto;
   margin-left: auto;
 }
-
-
 @media (min-width: 1068px) and (max-width: 1400px) { 
  .post-sidebar{
     margin-top: 15px;
@@ -102,12 +86,6 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
     margin-top: 15px;
     border:1px solid #DDD;
     padding: 5px;
-  
-
- }
-.form-group{
-    
-    padding:20px;
 }
 ul li{
     list-style: none;
@@ -129,8 +107,6 @@ h3.col-xs-12{
 .btn-info{
 float: right;
 }
-
-
 .icon-space{
     display: inline-block;
     padding:10px;
@@ -139,8 +115,6 @@ float: right;
     color:#55CBD2;
 
 }
-
-
 .title-text{
   font-family: 'Raleway', sans-serif;  
   letter-spacing: .2px;
@@ -152,22 +126,20 @@ float: right;
 .main-content{
     margin-top: 80px;
 }
-
-
-
 .white-text{
     font-style: italic;
     color: white;
 }
-
 body {
     font-family: "Libel Suit", "Times New Roman", Arial, sans-serif;
     font: message-box;
     font-size: 15px;
     line-height: 24px;
+    font-weight: 300; 
     background:#F8FAFF;
+    margin: 0px 0px;
+    /* background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4="); */
 }
-
 a {
     color: #55CBD2;
     text-decoration: none;
@@ -176,18 +148,12 @@ a {
     -webkit-transition: all .3s;
     -ms-transition: all .3s;
 }
-
 a:hover { color: #888; text-decoration: none; }
-
 strong { font-weight: bold; }
-
 address {
     margin-top: 28px;
     }
-
-
 @media (min-width: 50px) and (max-width: 988px) { 
- 
  address {
     margin-top: 28px;
     margin-left: 21px;
@@ -195,29 +161,56 @@ address {
  
 }
 @media (min-width: 988px) and (max-width: 1200px) { 
- 
  address {
     margin-top: 28px;
     margin-left: -58px;
     }
- 
 }
 /*
 * ==========================================================================
-* Nav Pills
+* Navigators
 * ==========================================================================
 */
+.navbar {
+    font-weight: bold;
+    padding-top: 0px;
+    width: 100%;
+    background-color: #F8FAFF;
+    position: fixed;
+}
+.navbar-nav > li > a {
+    padding: 10px 15px;
+    margin: 5px 5px;
+    border-radius: 4px;
+}
+.navbar-header {
+    position: relative;
+}
+.navbar-header-right {
+    position: fixed;
+    right: 15px;
+}
+a.nav-link.active{
+    background:rgb(221, 68, 51) !important;
+    color: white;
+}
+
+.nav > li > a:hover, .nav > li > a:focus,.nav > li > a.active{
+    background:rgb(221, 68, 51) !important;
+    color: white;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: rgb(221, 68, 51);
+}
 .nav-pills > li.selected > a,
 .nav-pills > li.selected > a:hover,
 .nav-pills > li.selected > a:focus {
   color: #ffffff;
   background-color: rgb(221, 68, 51);
 }
-/*
-* ==========================================================================
-* Pills Centered
-* ==========================================================================
-*/
 .nav-pills-centered > .nav-pills {
   text-align: center;
 }
@@ -239,44 +232,6 @@ address {
 }
 /*
 * ==========================================================================
-* Navbar
-* ==========================================================================
-*/
-.navbar-header {
-    position: relative;
-}
-.navbar-header-right {
-    position: fixed;
-    right: 15px;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: rgb(221, 68, 51);
-}
-.active{
-  background:rgb(221, 68, 51) !important;
-  color: white;
-}
-.navbar {
-  font-weight: bold;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 0;
-}
-/*
-* ==========================================================================
-* Navbar Nav Links
-* ==========================================================================
-*/
-.navbar-nav > li > a {
-  padding: 10px 15px;
-  margin: 5px 5px;
-  border-radius: 4px;
-}
-/*
-* ==========================================================================
 * Brand / Project Name
 * ==========================================================================
 */
@@ -288,7 +243,7 @@ address {
   letter-spacing: 2px;
   padding-top: 0px;
   position: fixed;
-  margin-left: -120px;
+  margin-left: -150px;
 }
 .side-left{
   background:#528C7C;
@@ -304,13 +259,11 @@ address {
         width: 25%;
     }
 }
-
 .banner-text{
     font-family: 'Raleway', sans-serif;
     color:white;
     font-size: 50px;
 }
-
 #banners{
     
     margin-top: 30px;
@@ -322,7 +275,6 @@ address {
     margin-bottom: 30px;
     padding-top: 120px;
 }
-
 @media (min-width: 100px) and (max-width: 800px) { 
  
     #banner-home{
@@ -330,19 +282,16 @@ address {
     height:450px;
     margin-bottom: 30px;
     }
- }
+}
 #banner{
     margin-top:0px;
 }
-
-
 .header h1 {
     float: left;
     margin: 0;
     text-align: left;
 }
 .header a.brand {
-
     font-family: 'PT Sans', sans-serif;
     font-size: 40px;
     margin-top:5px;
@@ -361,7 +310,6 @@ address {
         font-size: 37px;
      } 
  }  
-
 .paragraph-text{
     text-align: justify;
     letter-spacing:1px;
@@ -379,13 +327,11 @@ address {
 .spacing{
     margin-bottom: 80px;
 }
-
 .sidebar-right{
     font-size: 13px;
     font-weight: bold;
     color:#84d7bd;
 }
-
 .featured-img{
     padding: 0px 15px 15px 0;
 
@@ -396,23 +342,19 @@ p.blog-text{
     font-family: 'Arial';
     text-align:justify;
     text-justify:inter-word;
-    }
-
+}
 .btn-sm{
     margin-left: 21px;
 }
-
 .office-logo {
   width: 100px;
 }
-
 @media (max-width: 768px){ 
     .office-logo{
       height: 100px;
       width: 60px;
   }
 }
-
 /*
 * ==========================================================================
 * Feedback Section
@@ -579,6 +521,9 @@ footer h3 {
     color: #fff;
     padding: 20px 0px 10px 0px;
     background-color: rgb(23, 23, 23);
+    position: relative;
+    width: 100%;
+    vertical-align: bottom;
 }
 
 /*
@@ -726,8 +671,10 @@ footer h3 {
 .blockquote-box.blockquote-1 .square{background-color:#5adabc;color:#FFF}
 .blockquote-box.blockquote-2{border-color:#8fbbe8}
 .blockquote-box.blockquote-2 .square{background-color:#8fbbe8;color:#FFF}
-.blockquote-box.blockquote-red{width: 800px; margin-left:50px;border-color:rgb(221, 68, 51)}
+.blockquote-box.blockquote-red{width: 800px; height:500px;margin-left:0px;border-color:rgb(221, 68, 51)}
 .blockquote-box.blockquote-red .square{background-color:rgb(221, 68, 51);color:rgb(221, 68, 51)}
+.color-success{color:#4CAE4C}
+.color-mail{color:#009cec}
 /*
 * ==========================================================================
 * Portfolio
@@ -821,13 +768,29 @@ footer h3 {
 * Customized Pages
 * ==========================================================================
 */
+.page-pannel {
+    margin-top: 100px;
+}
+.page-body {
+    scroll-behavior: auto;
+}
 .page-row {
     margin-right: -15px;
     margin-left: -15px;
-    margin-top: 50px;
+    margin-top: 100px;
+}
+.page-title {
+    margin-top: 100px;
+    color: rgb(221, 68, 51);
 }
 .page-siderbar{
     padding: 10px;
     background:rgb(221, 68, 51);
     color: white;
-  }
+}
+.panel-body .tab-content .tab-pane{
+    background-color: #ffffff;
+}
+.panel-body .tab-content .tab-pane > .active {
+    background-color: #ffffff;
+}
